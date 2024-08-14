@@ -1,0 +1,966 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+@font-face {
+    font-family: 'Miama';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Miama'), url('https://fonts.cdnfonts.com/s/302/Miama-Regular.woff') format('woff');
+}
+body{
+    color: white; 
+    font-family:'Inter'; 
+}
+.for-all{
+    background-color: black;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 623px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17)100%,rgba(92, 91, 91, 0) ) ;
+}
+menu{  
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin-left: 10%;
+     margin-right: 5%;    
+}
+menu .left-logo h3{
+    font-size: 30px;
+    color: orangered;
+    cursor: pointer;
+}
+.ham-barger i{
+   display: none;
+}
+menu .right-menu ul{
+    border: 1px solid rgb(90, 86, 86);
+    border-radius: 30px;
+    padding: 10px ;
+}
+menu .right-menu ul{
+    display: flex;
+    
+}
+menu .right-menu ul li{
+    list-style-type: none; 
+    padding: 0 20px;
+}
+menu .right-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+menu .right-menu ul li #first-a{
+   background-color: orangered;
+   border-radius: 15px;
+   padding: 5px 20px;
+   font-weight: 600;
+}
+/* menu response start */
+    @media screen and (max-width:576px) {
+        header{
+        height:auto;  
+        width: 100%;
+        }        
+    }
+   @media screen and (max-width:576px) {  
+    menu{  
+        padding: 40px 10px;
+        margin-left: 0%;
+        margin-right: 0%;     
+    }
+     
+     .ham-barger i{
+        display: block;
+     } 
+     menu .right-menu{
+      display: none;
+    } 
+}
+/* menu response end */
+
+/* first-section start */
+.first-one{
+    width:100%;
+}
+.main-first{  
+display: flex;
+justify-content: space-between;
+margin-left: 10%;
+margin-right: 15%;
+}
+.main-first .text-column h1{
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    }
+    .main-first .text-column span{
+    font-size: 80px;
+    font-family: 'Miama';
+    }
+    .main-first .text-column p {
+        font-size: 18px;
+        margin-bottom: 17px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .main-first .text-column .btn-two .first-btn {
+        padding: 13px 20px;
+        background-color: #ff4500;
+        color: white;
+        border: none;
+        font-size: 17px;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-right: 5px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .main-first .text-column .btn-two .first-btn:hover{
+        background-color: #fff;
+        color: #ff4500;
+    }
+    .main-first .text-column .btn-two .second-btn{
+        padding: 10px 20px;
+        background-color:transparent ;
+        color: #fff;
+        border: 1px solid #fff;
+        font-size: 17px;
+        border-radius: 20px;
+        font-weight: 600;
+        transition: all .5s;
+        cursor: pointer;
+    }
+    .main-first .text-column .btn-two .second-btn:hover{
+        background-color: #ff4500; ;
+        color: #fff;
+        border: 1px solid #ff4500;
+        font-size: 17px;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+    .img-text{
+        position: relative;
+        }
+        .img-text .left-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .img-text .left-text .red{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .img-text .left-text {
+            width: 170px;
+            height: 75px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(20px);
+            background: rgba(48, 48, 48, 0.54);
+            border-radius: 8px;
+            position: absolute;
+            top: 63%;
+           right: 71%;   
+        }
+        .img-text .left-text h1{
+            font-size: 25px;
+            color: white;
+            
+        }
+        .img-text .left-text p{
+            font-size: 16px;
+            color: white;
+        }
+        .img-text .img{
+            width: 310px;  
+        }
+        .img-text .img img{
+        width: 100%;
+        height: 480px;
+        }
+        .img-text .right-text{
+            position: absolute;
+            top: 25%;
+            left: 66%;
+            width: 191px;  
+            height: 80px;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.1);
+            padding:  10px;
+        }
+        .img-text .right-text h1{
+            font-size: 30px;
+            color: white;
+        }
+        .img-text .right-text p{
+            font-size: 15px;
+            color: white;
+        }
+        /* first sectiion response start */
+        @media screen and (max-width:576px) {
+            .main-first .text-column h1{
+                font-size: 40px;
+            } 
+            .main-first .text-column span{
+                font-size:40px ;
+            }
+            .btn-two .first-btn{
+                margin-bottom: 10px;
+            }
+            .main-first .text-column p{
+                font-size: 17px;
+            } 
+            .main-first .text-column {
+                 margin-top: 10%; 
+            }
+        
+        .main-first{
+            flex-direction: column;
+        }
+        .main-first{
+            position: relative;
+        }
+      .main-first  .left-text{
+            position: absolute;
+            top: 43%;
+            left: 0%;
+        }
+       .main-first .img{
+            width: 300px;
+        }
+      .main-first  .right-text{
+            width: 180px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+        }
+        .img-text .right-text p{
+            font-size: 15px;
+        }
+        .img-text .right-text h1{
+            font-size: 25px;
+        }
+    }
+        /* first section response end */
+/* first-section end */
+
+/* habits start  */
+.top-text{
+    padding: 20px 0;
+     text-align: center;
+     margin-bottom: 50px;
+ }
+ .top-text h1 {
+     font-size: 45px;
+     font-weight: 900;
+     color: #fff;
+     margin-top: 100px;
+ }
+ .top-text P{
+ font-size: 18px;
+ color:  rgba(255, 255, 255, 0.5);
+ margin-top: 20px;
+ }
+ .main-Habits{ 
+    width:80%; 
+    display: flex;
+    justify-content: space-between;
+   margin-left: 10%;
+    margin-right: 10%;
+ }
+ .card{
+    color: white;    
+}
+.card h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+.meet-team-main, .card p {
+    color: rgba(255, 255, 255, 0.5) ;
+    font-size: 14px ;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+}
+.main-Habits .card img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+.main-Habits .card{
+    text-align: center;
+    width: 20%;
+}
+/* habits  end */
+
+/* habits response start */
+@media screen and (max-width:576px) {
+    .main-Habits{
+       flex-direction: column;
+       
+    }
+    .main-Habits .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-Habits .text{
+        text-align: center;
+    }
+
+    }
+/* habits response end */
+
+ /* Run an Extra start  */
+ .run-extra{
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.main-runExtra{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    width: 100%;
+    background-color: rgb(32, 30, 30);
+    border-radius: 10px;
+}
+.main-runExtra .text {
+    padding-left: 25px;
+}
+
+.main-runExtra .text h1{
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 900;
+}
+.main-runExtra .text p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(111, 110, 110);
+    font-weight: 300;
+    line-height: 1.3;
+}
+.main-runExtra .text button{
+    background-color: orangered;
+    color: white;
+    padding: 10px 28px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;    
+}
+.main-runExtra .img{
+    margin-top: 40px;
+    width: 500px;
+}
+.main-runExtra .img img{
+    width: 100%;
+    border-radius: 10px;
+}
+ /* Run an Extra end */
+
+ /* Run an Extra response start  */
+ @media screen and (max-width:576px)  {
+    .main-runExtra{
+       flex-direction: column;
+       width: 90%;
+        height: auto;
+    }
+    .run-extra{ 
+        margin-left: 0%;
+        margin-right: 10%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .main-runExtra .text h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: white;
+        font-weight: 700;
+        width:100%;
+    }
+    .main-runExtra .text p{
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: rgb(186, 182, 182);
+        font-weight: 500;
+        width: 90%;
+    }
+    .main-runExtra .text button{
+        background-color: orangered;
+        color: white;
+        padding: 10px 28px;
+        font-size: 18px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .main-runExtra .img{
+        width: 330px;
+        margin-left: 20px;
+    }
+    .main-runExtra .img img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+}
+ /* Run an Extra response  end */
+
+ /* BMI Calculator start */
+ .Bmi-Calculator{
+    margin-bottom: 100px;
+    position: relative;
+    }
+    .Bmi-Calculator .text {
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .Bmi-Calculator .text h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: rgb(255, 255, 255);
+    }
+    .Bmi-Calculator .text p{
+        font-size: 18px;
+        color: grey;
+        margin-bottom: 10px;
+        
+    }
+    .main-bmiCalculat {
+        width: 100%;
+        height: 500px;
+        /* margin-bottom: 100px; */
+        background-color: rgb(30, 28, 28);
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .main-bmiCalculat .colum-1{
+        margin-left: 10%;
+        margin-top: 5%;
+        /* width: 40%; */
+        }
+        .colum-1 h2{
+           font-size: 30px;
+           font-weight: 500;
+        }
+        table{
+            width: 500px;
+            height: 250px;
+            border-collapse: collapse;
+            margin-top: 20px;
+            text-align: center;
+        }
+        td{
+            border: 1px solid rgb(88, 75, 75);
+            padding: 5px 10px;
+            color: grey;
+            font-size:24px;
+        }
+        th{
+            border: 1px solid rgb(88, 75, 75);
+            padding: 5px 10px;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+        .colum-2{    
+            margin-top: 2%; 
+            
+            /* width: 40%; */
+        }
+        .colum-2 .text{
+            text-align: center;
+            
+        }
+        .colum-2 .text h1{
+           font-size: 25px;
+           font-weight: 700;
+           margin-bottom: 15px;
+        }
+        .colum-2 .text p{
+           font-size: 14px;
+           color: grey;
+        }
+        .first-sect{
+            text-align: center;
+        }
+        .first-sect input{
+            margin-bottom: 10px;
+            width: 260px;
+            padding: 10px 0;
+            font-size: 18px;
+            background-color: grey;
+            border-radius: 8px;
+            
+        }
+        ::placeholder{
+            color: rgb(210, 205, 205);
+            padding: 0 17px;
+        }
+        .second-sect{
+            text-align: center;
+        }
+        .second-sect input{
+            margin-bottom: 10px;
+            padding: 10px 0;
+            font-size: 18px;
+            background-color: grey;
+            border-radius: 8px;
+            width: 260px;
+        }
+        .last-one{
+            text-align: center;
+        }
+        .last-one input{  
+            width: 528px;
+            padding: 10px 0;
+            font-size: 18px;
+            background-color: grey;
+            border-radius: 8px; 
+        }
+    .colum-2 .btn{
+        margin-left: 16%;
+    }
+    
+        .colum-2 .btn button{
+            background-color: orangered;
+            color: white;
+            padding: 12px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: none;
+            margin-bottom: 40px;
+            margin-left: 10px;
+        }
+        .colum-2 .second-sect{
+        position: relative;
+        }
+        .colum-2 .second-sect i{
+        position: absolute;
+        top:20% ;
+        right: 20%;
+        }
+        .last-one{
+            position: relative;
+        }
+        .last-one i{
+            position: absolute;
+            top: 20%;
+            right: 20%;
+        
+        }
+ /* BMI Calculator end */
+
+ /* BMI Calculator responsive start */
+ @media screen and (max-width:576px) {
+    .main-bmiCalculat {
+         width: 100%;       
+    }
+    .Bmi-Calculator .text{
+        width: 90%;
+        text-align: center;
+    }
+    .main-bmiCalculat .colum-1{
+        margin-left: 2%;     
+        width: 50%;
+    }
+    table{
+        width: 390px;
+        height: 200px;
+
+    }
+    td{
+        font-size: 20px;
+    }
+    th{
+        font-size: 25px;
+    }
+    .first-sect {
+        display: flex;  
+        margin-left: 10px;  
+    }
+    .colum-2 .text{
+        text-align: start;
+
+    }
+    .colum-1 h2{
+        width: 400px;
+    }
+   
+    .second-sect{
+        display: flex;
+        margin-left: 10px;   
+    }
+}
+@media screen and (max-width:576px) {
+    .main-bmiCalculat{
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .colum-2 .second-sect i{
+        position: absolute;
+        top:25% ;
+        right: 10%;
+        }
+        .last-one i{
+            position: absolute;
+            top: 25%;
+            right: 10%;
+        
+        }
+    
+    .colum-1{
+        margin-left: 20%;
+        
+    }
+    .first-sect input{
+        width: 90%;
+    }
+    .second-sect input{
+        width: 90%;
+    }
+    .colum-2{
+        width: 100%;
+    }
+    .last-one input{      
+       width: 97%;
+       text-align: center;
+       margin-left: 0px;
+       margin-left: 10px;
+       
+    }
+    
+    .colum-2 .btn button{
+        width: 200px;
+        border-radius: 20px;
+    }
+    .colum-2 .btn{
+        margin-left: 0;
+    }
+}
+ /* BMI Calculator responsive end */
+
+ /* Meet Our Team start */
+ .meet-team{
+    width: 100%; 
+    margin-bottom: 100px;
+ }
+ .meet-team .text{
+ text-align: center;
+ margin-bottom: 90px;
+ }
+ .meet-team .text h1{
+     color: rgb(255, 255, 255);
+     font-size: 40px;
+     font-weight: 900;
+ }
+ .meet-team .text p{
+     color: rgba(255, 255, 255, 0.5);
+     font-size: 18px;
+     font-weight: 300;
+     margin-top: 25px;
+     margin-bottom: 20px;
+ }
+ .meet-team-main {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    background-color: rgb(40, 38, 38);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+    gap: 30px;
+}
+.meet-team-main .card-1{
+    background-image: url('images/trainer1.png');
+}
+.meet-team-main .card-2{
+    background-image: url('images/trainer2.png');
+}
+.meet-team-main .card-3{
+    background-image: url('images/trainer3.png');
+}
+.meet-team-main .card-4{
+    background-image: url('images/trainer4.png');
+}
+.meet-team-main .card-5{
+    background-image: url('images/trainer5.png');
+}
+.meet-team-main .card-6{
+    background-image: url('images/trainer6.png');
+}
+.meet-team-main .card {
+    height: 270px;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 !important;
+    border-radius: 18px;
+}
+.meet-team-main .card h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.meet-team-main .card p{
+    color: rgb(169, 163, 163);
+    font-size: 20px;
+}
+ /* Meet Our Team end */
+
+ /* Meet Our Team responsive start */
+ @media screen and (max-width:576px) {
+    .meet-team-main{
+        height: auto;
+       grid-template-columns: repeat(1,1fr);
+          
+    }
+    .meet-team-main .card-2 h2{
+       font-size: 20px;
+    }
+    .meet-team-main .card-3 h2{
+       font-size: 20px;
+    }
+    .meet-team-main .card-4 {
+     background-position: center; 
+    }
+   
+}
+ /* Meet Our Team responsive end */
+
+ /* new section making start */
+ .clients{
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    height: 430px;
+    margin-bottom: 50px;
+    }
+    .clients .center-text{
+    text-align: center;
+    padding: 10px 0;
+    }
+    .clients .center-text h1{
+        margin-top: 30px;   
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: white;
+    }
+    .clients-main{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    }
+    .clients .card-1{
+    margin-top: 50px;
+    text-align: center;
+    }
+    
+    .clients .card-1 .star i{
+        font-size: 25px;
+        color: white;
+        margin-bottom:20px;
+        margin-left: 20px;
+    }
+    .clients .card-1 h2{
+    color: rgb(196, 192, 192);
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    }
+    .clients .card-1 p{
+    font-size: 20px;
+    color: rgb(197, 194, 194);
+    }
+ /* new section making end */
+
+ /* new section making response start */
+ @media screen and (max-width:576px) {
+    .clients{
+        width: 100%;
+        background-color: rgb(15, 15, 15);
+        height: auto;
+        margin-bottom: 50px;
+        }
+        .clients .center-text{
+        text-align: center;
+        padding: 20px 0;
+        }
+        .clients .center-text h1{           
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: white;
+        }
+        .clients-main{
+            
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        }
+        .clients .card-1{
+        
+        text-align: center;
+        }
+        
+        .clients .card-1 .star i{
+            font-size: 25px;
+            color: white;
+            margin-bottom:20px;
+            margin-left: 20px;
+        }
+        .clients .card-1 h2{
+        color: rgb(196, 192, 192);
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 13px;
+        }
+        .clients .card-1 p{
+        font-size: 20px;
+        color: rgb(197, 194, 194);
+        }
+}
+ /* new section making response end */
+ /* footer start */
+ footer{
+    width: 100%;
+    background-color: rgb(32, 31, 31);
+    height: 500px;
+}
+.main-footer{
+    padding: 40px 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.col-text-1 h1{
+color: orangered;
+font-size: 40px;
+font-weight: 500;
+}
+.col-text-1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    width: 400px;
+    line-height: 20px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+.col-text-2 h2{
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+}
+.col-text-2 ul{
+   list-style-type: none;
+}
+.col-text-2 ul li{
+   padding: 10px 0;
+}
+.col-text-2 ul li a{
+   text-decoration: none;
+   color: rgb(186, 186, 186);
+   font-size: 23px;
+   font-weight: 300;
+}
+
+.col-text-3 h2{
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+}
+.col-text-3 ul{
+   list-style-type: none;
+}
+.col-text-3 ul li{
+   padding: 10px 0;
+}
+.col-text-3 ul li a{
+   text-decoration: none;
+   color: rgb(186, 186, 186);
+   font-size: 23px;
+   font-weight: 300;
+}
+hr{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.last-text{
+    text-align: center;
+}
+.last-text h3{
+    margin-top: 50px;
+    font-size: 20px;
+    color: grey;
+}
+ /* footer end */
+ /* footer responsive start */
+ @media screen and (max-width:576px) {
+    footer{
+        height: auto;
+        
+    }
+    footer .last-text{
+        
+    }
+    .main-footer{       
+        flex-direction: column;
+    }
+    .col-text-1 p{
+        width: 100%;
+    }
+    .col-text-1{
+        margin-bottom: 20px;
+    }
+    .col-text-2{
+        margin-bottom: 20px;
+    }
+    .col-text-3{
+        margin-bottom: 20px;
+    }
+    .last-text h3{
+        margin-top: 30px;
+    }
+}
+ /* footer responsive end */
